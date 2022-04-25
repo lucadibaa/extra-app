@@ -1,9 +1,11 @@
+import Layout from "./components/layout/Layout"
+
 function App() {
 
   return (
-    <div className="bg-slate-600">
-      hello world
-    </div>
+    <Layout>
+
+    </Layout>
   )
 }
 
