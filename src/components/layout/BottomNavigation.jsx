@@ -17,7 +17,7 @@ const BottomNavigation = () => {
                         </li>
                         <li className="flex flex-col items-center font-medium">
                             <RiDonutChartLine className="text-2xl text-[#00bcd4]" />
-                            <span className="text-xs text-[#00bcd4]">Overall</span>
+                            <span className="text-xs text-[#00bcd4]">Reports</span>
                         </li>
                         <li className="flex flex-col items-center font-medium">
                             <IoTrendingUp className="text-2xl" />
@@ -25,7 +25,7 @@ const BottomNavigation = () => {
                         </li>
                         <li className="flex flex-col items-center font-medium">
                             <IoTrendingDown className="text-2xl" />
-                            <span className="text-xs">Expenses</span>
+                            <span className="text-xs">Spending</span>
                         </li>
                     </ul>
                 </div>

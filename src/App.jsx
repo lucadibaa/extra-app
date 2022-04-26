@@ -1,10 +1,11 @@
 import Layout from "./components/layout/Layout"
+import Reports from "./pages/Reports"
 
-function App() {
+const App = () => {
 
   return (
     <Layout>
-
+      <Reports />
     </Layout>
   )
 }
