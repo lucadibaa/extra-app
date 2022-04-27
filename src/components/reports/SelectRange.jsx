@@ -25,7 +25,7 @@ const SelectRange = () => {
             {({ open }) => (
                 <>
                     <div className="relative">
-                        <Listbox.Button className="relative w-40 bg-white border border-gray-300 rounded-md shadow-sm pl-3 pr-8 py-1 text-sm text-left cursor-default focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500">
+                        <Listbox.Button className="relative w-40 bg-white border border-gray-300 rounded-md shadow-sm pl-3 pr-8 py-1.5 text-sm text-left cursor-default focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500">
                             <span className="flex items-center">
                                 <span className="truncate">{range}</span>
                             </span>
