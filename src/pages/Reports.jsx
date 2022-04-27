@@ -1,4 +1,5 @@
 import DoughnutChart from "../components/reports/Doughnut"
+import OperationsList from "../components/reports/OperationsList"
 import SelectRange from "../components/reports/SelectRange"
 
 const Reports = () => {
@@ -7,7 +8,7 @@ const Reports = () => {
             <div className="p-3">
                 <SelectRange />
             </div>
-            <div className="relative px-2 -my-10">
+            <div className="relative px-2 -mt-10 -mb-5">
                 <DoughnutChart />
                 <div className="absolute top-1/2 -translate-y-1/2 left-[23%] flex flex-col gap-2 text-center text-sm">
                     <div className="flex flex-col">
@@ -20,6 +21,9 @@ const Reports = () => {
                     </div>
                 </div>
             </div>
+
+            <OperationsList />
+
         </div>
     )
 }
