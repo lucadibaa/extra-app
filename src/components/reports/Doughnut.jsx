@@ -3,25 +3,7 @@ import { Doughnut } from 'react-chartjs-2'
 
 ChartJS.register(ArcElement, Tooltip, Legend)
 
-const DoughnutChart = () => {
-
-    const data = {
-        labels: ['Earnings', 'Expenses'],
-        datasets: [
-            {
-                data: [852, 94],
-                backgroundColor: [
-                    'rgba(192, 237, 166, .8)',
-                    'rgba(253, 93, 93, .7)',
-                ],
-                borderColor: [
-                    '#C0EDA6',
-                    '#FD5D5D',
-                ],
-                borderWidth: .1,
-            },
-        ],
-    }
+const DoughnutChart = ({ data }) => {
 
     const options = {
         responsive: true,

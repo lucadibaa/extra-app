@@ -1,11 +1,12 @@
 import Layout from "./components/layout/Layout"
+import Earnings from "./pages/Earnings"
 import Reports from "./pages/Reports"
 
 const App = () => {
 
   return (
     <Layout>
-      <Reports />
+      <Earnings />
     </Layout>
   )
 }

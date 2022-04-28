@@ -1,21 +1,21 @@
+import EarningsList from "../components/earnings/EarningsList"
 import DoughnutChart from "../components/reports/Doughnut"
-import OperationsList from "../components/reports/OperationsList"
 import SelectRange from "../components/reports/SelectRange"
 
-const Reports = () => {
+const Earnings = () => {
 
     const data = {
-        labels: ['Earnings', 'Expenses'],
+        labels: ['Salary', 'Gifts'],
         datasets: [
             {
                 data: [852, 94],
                 backgroundColor: [
-                    'rgba(192, 237, 166, .8)',
-                    'rgba(253, 93, 93, .7)',
+                    'rgba(22, 85, 143, .85)',
+                    'rgba(121, 126, 246, .8)',
                 ],
                 borderColor: [
-                    '#C0EDA6',
-                    '#FD5D5D',
+                    '#16558F',
+                    '#797EF6',
                 ],
                 borderWidth: .1,
             },
@@ -41,10 +41,10 @@ const Reports = () => {
                 </div>
             </div>
 
-            <OperationsList />
+            <EarningsList />
 
         </div>
     )
 }
 
-export default Reports
+export default Earnings
