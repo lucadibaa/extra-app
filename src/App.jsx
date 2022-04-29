@@ -1,12 +1,13 @@
 import Layout from "./components/layout/Layout"
-import Earnings from "./pages/Earnings"
 import Reports from "./pages/Reports"
+import Earnings from "./pages/Earnings"
+import Spending from "./pages/Spending"
 
 const App = () => {
 
   return (
     <Layout>
-      <Earnings />
+      <Spending />
     </Layout>
   )
 }

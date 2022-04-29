@@ -4,7 +4,7 @@ const EarningsList = () => {
     return (
         <div className="h-full">
             <div className="w-full flex items-center justify-between bg-gray-100 border-b border-gray-300 py-1.5 px-2.5">
-                <span className="font-medium uppercase tracking-wide text-sm">Earning Deatils</span>
+                <span className="font-medium uppercase tracking-wide text-sm">Spending Deatils</span>
             </div>
             <div className="divide-y">
                 {
@@ -17,10 +17,10 @@ const EarningsList = () => {
                             <div className="flex items-center justify-between w-[calc(100%-60px)]">
                                 <div className="flex flex-col justify-between h-full">
                                     <span className="font-semibold text-xs">23 APR 2022</span>
-                                    <span className="text-sm truncate">Salary</span>
+                                    <span className="text-sm truncate">Grocery</span>
                                 </div>
                                 <div className="flex items-center justify-center">
-                                    <span className="font-semibold text-sm">+852,00 €</span>
+                                    <span className="font-semibold text-sm">-94,00 €</span>
                                 </div>
                             </div>
                         </div>
