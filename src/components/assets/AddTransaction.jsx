@@ -43,7 +43,7 @@ const AddTransaction = ({ adding, setAdding, initialType }) => {
         >
             {({ values, setFieldValue }) =>
                 <div className="backdrop-filter backdrop-blur-sm bg-gray-800 bg-opacity-70 absolute inset-0 z-50 flex justify-center items-center">
-                    <div className="bg-slate-100 rounded overflow-x-hidden shadow-lg transform align-middle w-5/6 h-[87.5%]">
+                    <div className="bg-slate-100 rounded overflow-x-hidden shadow-lg transform align-middle w-5/6 max-h-[87.5%]">
                         {/* header */}
                         <div className="py-3 px-4 bg-slate-700 text-white">
                             <div className="flex justify-between mb-1">

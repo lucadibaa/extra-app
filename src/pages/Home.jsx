@@ -1,6 +1,10 @@
 import { ChevronRightIcon } from "@heroicons/react/outline"
+import { Link, useNavigate } from "react-router-dom"
 
 const Home = () => {
+
+    const navigate = useNavigate()
+
     return (
         <div>
             <div className="w-full h-40 bg-green-700" >
@@ -18,41 +22,42 @@ const Home = () => {
 
             <hr />
 
-            {/* click: redirect to reports page */}
             <div className="w-full flex items-center justify-between my-4 px-2.5">
                 <span className="font-semibold text-lg tracking-wider">Analisi delle spese</span>
-                <button className="flex items-center text-indigo-600"> {/* redirect to all analytics page */}
+                <button onClick={() => navigate('/reports')} className="flex items-center text-indigo-600"> {/* redirect to all analytics page */}
                     <span className="text-sm">Go to section</span>
                     <ChevronRightIcon className="h-3.5 ml-0.5" />
                 </button>
             </div>
-            <div className="bg-white flex flex-col mx-2 p-4 border rounded-lg shadow-xl">
-                <span className="text-xs uppercase font-light mb-2.5">current month</span>
-                <div className="flex flex-col gap-2 mb-4">
-                    <div className="flex items-center justify-between">
-                        <span className="font-medium">Earnings</span>
-                        <div>
-                            <span className="font-semibold">+852</span>
-                            <span>,00 €</span>
+            <Link to="/reports">
+                <div className="bg-white flex flex-col mx-2 p-4 border rounded-lg shadow-xl">
+                    <span className="text-xs uppercase font-light mb-2.5">current month</span>
+                    <div className="flex flex-col gap-2 mb-4">
+                        <div className="flex items-center justify-between">
+                            <span className="font-medium">Earnings</span>
+                            <div>
+                                <span className="font-semibold">+852</span>
+                                <span>,00 €</span>
+                            </div>
+                        </div>
+                        <div className="relative h-3 rounded-full border border-green-600">
+                            <div className="absolute h-3 w-[88%] rounded-full bg-green-600" />
                         </div>
                     </div>
-                    <div className="relative h-3 rounded-full border border-green-600">
-                        <div className="absolute h-3 w-[88%] rounded-full bg-green-600" />
-                    </div>
-                </div>
-                <div className="flex flex-col gap-2">
-                    <div className="flex items-center justify-between">
-                        <span className="font-medium">Expenses</span>
-                        <div>
-                            <span className="font-semibold">-104</span>
-                            <span>,60 €</span>
+                    <div className="flex flex-col gap-2">
+                        <div className="flex items-center justify-between">
+                            <span className="font-medium">Expenses</span>
+                            <div>
+                                <span className="font-semibold">-104</span>
+                                <span>,60 €</span>
+                            </div>
+                        </div>
+                        <div className="relative h-3 rounded-full border border-red-600">
+                            <div className="absolute h-3 w-[12%] rounded-full bg-red-600" />
                         </div>
                     </div>
-                    <div className="relative h-3 rounded-full border border-red-600">
-                        <div className="absolute h-3 w-[12%] rounded-full bg-red-600" />
-                    </div>
                 </div>
-            </div>
+            </Link>
         </div>
     )
 }
